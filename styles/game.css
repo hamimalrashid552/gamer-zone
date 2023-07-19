@@ -289,12 +289,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 
 .footer_1 {
     display: flex;
     gap: 20px;
     list-style: none;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -307,8 +309,25 @@ main {
     display: flex;
     gap: 30px;
 }
-    
 
+.footer_3 {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer_3 a{
+    font-size: 1rem;
+    color: gray;
+    text-decoration: none;
+}
+    
+.footer_4{
+    color: gray;
+    font-size: 1rem;
+}
 
 /* mobile device */
 
