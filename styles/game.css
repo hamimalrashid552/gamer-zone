@@ -495,4 +495,23 @@ main {
         margin-left: 10px;
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .footer-title{
+        display: flex;
+    }
+
+    .footer_1{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 5px;
+    }
+
+    .footer_2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer_3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
