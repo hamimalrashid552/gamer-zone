@@ -273,6 +273,43 @@ main {
     color: #FF42A5;
 }
 
+/* footer */
+
+.footer-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    height: 40px;
+}
+
+.footer{
+    background-color: #0B0223;
+    padding: 40px 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_1 {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer_1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer_2 {
+    display: flex;
+    gap: 30px;
+}
+    
+
+
 /* mobile device */
 
 @media screen and (max-width: 426px) {
