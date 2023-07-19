@@ -173,7 +173,7 @@ main {
 }
 
 .image-container:hover .hover {
-    border: 5px solid tomato;
+    border: 5px solid red;
     border-radius: 10px;
     opacity: 0.3;
 }
@@ -262,5 +262,72 @@ main {
     .main-image {
         flex-direction: column;
         margin-left: 30px;
+    }
+
+}
+
+/* tablet devices */
+
+@media screen and (min-width:427px) and (max-width:843px) {
+    .header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 0 240px;
+    }
+
+    .nav-title {
+        text-align: center;
+    }
+
+    nav>h3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 70px;
+    }
+
+    nav>ul {
+        flex-direction: column;
+        gap: 50px;
+        padding: 0px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+    }
+
+    .banner-content {
+        padding: 20px 240px;
+        text-align: center;
+        background-image: url('../images/Group\ 14.png');
+    }
+
+    .btn-primary-1 {
+        margin-bottom: 20px;
+    }
+
+    .banner-image {
+        width: 100%;
+        padding: 20px 240px;
+        background-color: #FFF;
+    }
+
+    .main-image {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .image-container{
+        margin-left: 20px;
+    }
+
+    .middle {
+        left: 25%;
     }
 }
