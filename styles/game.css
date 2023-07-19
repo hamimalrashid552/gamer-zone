@@ -246,6 +246,33 @@ main {
 
 }
 
+/* games section
+ */
+
+.games {
+    display: grid;
+    gap: 5px;
+    grid-template-columns:repeat(5, 1fr);
+}
+
+.games-border > div{
+    display: flex;
+    gap: 5px;
+}
+
+.games-border {
+    display: inline-block;
+    border: none;
+    background-color: white;
+    border-radius: 50px;
+    
+}
+
+.games-border:hover{
+    border: 3px solid #FF42A5;
+    color: #FF42A5;
+}
+
 /* mobile device */
 
 @media screen and (max-width: 426px) {
@@ -316,70 +343,81 @@ main {
         padding-left: 300px;
     }
 
+    .games{
+        margin-left: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
 
-    /* tablet devices */
+}
 
-    @media screen and (min-width:427px) and (max-width:843px) {
-        .header {
-            padding: 20px;
-        }
 
-        nav {
-            flex-direction: column;
-            padding: 0 240px;
-        }
+/* tablet devices */
 
-        .nav-title {
-            text-align: center;
-        }
+@media screen and (min-width:427px) and (max-width:770px) {
+    .header {
+        padding: 20px;
+    }
 
-        nav>h3 {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 70px;
-        }
+    nav {
+        flex-direction: column;
+        padding: 0 240px;
+    }
 
-        nav>ul {
-            flex-direction: column;
-            gap: 50px;
-            padding: 0px;
-        }
+    .nav-title {
+        text-align: center;
+    }
 
-        .banner {
-            flex-direction: column-reverse;
-            align-items: center;
-            padding: 0;
-        }
+    nav>h3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 70px;
+    }
 
-        .banner-content {
-            padding: 20px 240px;
-            text-align: center;
-            background-image: url('../images/Group\ 14.png');
-        }
+    nav>ul {
+        flex-direction: column;
+        gap: 50px;
+        padding: 0px;
+    }
 
-        .btn-primary-1 {
-            margin-bottom: 20px;
-        }
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+    }
 
-        .banner-image {
-            width: 100%;
-            padding: 20px 240px;
-            background-color: #FFF;
-        }
+    .banner-content {
+        padding: 20px 240px;
+        text-align: center;
+        background-image: url('../images/Group\ 14.png');
+    }
 
-        .main-image {
-            flex-direction: column;
-            margin-left: 30px;
-        }
+    .btn-primary-1 {
+        margin-bottom: 20px;
+    }
 
-        .image-container {
-            margin-left: 20px;
-        }
+    .banner-image {
+        width: 100%;
+        padding: 20px 240px;
+        background-color: #FFF;
+    }
 
-        .middle {
-            left: 25%;
-        }
+    .main-image {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .image-container {
+        margin-left: 20px;
+    }
+
+    .middle {
+        left: 25%;
+    }
+
+    .games{
+        margin-left: 10px;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
