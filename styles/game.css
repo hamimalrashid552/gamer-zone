@@ -4,7 +4,7 @@
 
 .header {
     background-color: #FFF;
-    
+
 }
 
 /* nav bar styles */
@@ -14,7 +14,6 @@
     font-weight: 700;
     color: #0B0223;
     height: 40px;
-    width: auto;
 }
 
 .nav-image {
@@ -117,6 +116,108 @@ nav li a {
     border-radius: 48px;
 }
 
-.banner-content{
+.banner-content {
     margin-bottom: 1px;
+}
+
+/* main part style */
+
+main{
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+
+.main-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.linear-color {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-description {
+    color: #534C64;
+    text-align: center;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+.main-image {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-description {
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+
+}
+
+/* mobile device */
+
+@media screen and (max-width: 426px) {
+    .header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 0 240px;
+    }
+
+    .nav-title {
+        text-align: center;
+    }
+
+    nav>h3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 70px;
+    }
+
+    nav>ul {
+        flex-direction: column;
+        gap: 50px;
+        padding: 0px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+    }
+
+    .banner-content {
+        padding: 20px 240px;
+        text-align: center;
+        background-image: url('../images/Group\ 14.png');
+    }
+
+    .btn-primary-1 {
+        margin-bottom: 20px;
+    }
+
+    .banner-image {
+        width: 100%;
+        padding: 20px 240px;
+        background-color: #FFF;
+    }
 }
